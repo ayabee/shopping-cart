@@ -1,0 +1,38 @@
+This code only works on browsers using V8 Javascript engine:
+  - Google Chrome (Recommended)
+  - Microsoft Edge
+  - Opera
+
+
+
+How to test:
+  - open index.html on a supported browser
+  - open the broswer console
+  - to initialize your cart with the new pricing rules, type:
+
+        cart = ShoppingCart.new(pricingRules);
+
+  - to add an item to your cart, type:
+
+        cart.add(item1);
+
+        *items are declared in main.js
+          - item1 = ult_small
+          - item2 = ult_medium
+          - item3 = ult_large
+          - item4 = 1gb
+
+  - to add an item to your cart and use a promo code, type:
+
+        cart.add(item1, promo_code);
+
+        *promo_code is declared in main.js for convenience but you can use any string
+          - promo_code = 'I<3AMAYSIM'
+
+  - to view the items in your cart, type:
+
+        cart.items;
+
+  - to see the total cost of the items in your cart, type:
+
+        cart.total;
